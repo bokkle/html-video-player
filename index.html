@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Video Player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="player">
+      <video
+        class="player__video viewer"
+        src="./APE AIRMAIL.mp4"
+      ></video>
+      <div class="player__controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+        <button class="player__button toggle" title="Toggle Play">►</button>
+        <div class="icon-volume"><i class="fa-solid fa-volume-low"></i></div>
+        <input
+          type="range"
+          name="volume"
+          class="player__slider"
+          min="0"
+          max="1"
+          step="0.05"
+          value="1"
+        />
+        <div class="icon-playback"><i class="fa-solid fa-bolt"></i></div>
+        <input
+          type="range"
+          name="playbackRate"
+          class="player__slider"
+          min="0.5"
+          max="2"
+          step="0.1"
+          value="1"
+        />
+        <button data-skip="-10" class="player__button">« 10s</button>
+        <button data-skip="5" class="player__button">5s »</button>
+        <button class="player__button fullscreen">⛶</button>
+      </div>
+    </div>
+  </body>
+</html>
